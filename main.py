@@ -40,7 +40,7 @@ def main():
             for bullet in shots:
                 if ast.collision_check(bullet):
                     bullet.kill()
-                    ast.kill()
+                    ast.split()
             
         
 
