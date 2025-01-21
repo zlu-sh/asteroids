@@ -37,6 +37,12 @@ def main():
             if player.collision_check(ast):
                 print("Game over!")
                 return
+            for bullet in shots:
+                if ast.collision_check(bullet):
+                    bullet.kill()
+                    ast.kill()
+            
+        
 
         screen.fill("black")
         
